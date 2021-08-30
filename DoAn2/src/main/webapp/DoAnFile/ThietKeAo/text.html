@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dynamic and Resizable Tee Designer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="icomoon/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="">FASHION STORE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExample05"
+            aria-controls="navbarsExample05"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Print Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdown04"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Services</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="#">Support Design</a>
+                  <a class="dropdown-item" href="#">Contact Fashion Designer</a>
+                  <a class="dropdown-item" href="#">Watching Clothes</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item cta-btn">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="main__designer">
+      <div id="tshirt-div">
+        <img id="tshirt-backgroundpicture" src="./background_tshirt1.png" />
+          <div class="text-design">
+          </div>
+        <div id="drawingArea" class="drawing-area">
+          <div class="canvas-container">
+            <canvas id="tshirt-canvas" width="200" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="user__desgin-object">
+        <div class="nav__user-design">
+            <ul class="nav__user-design-item">
+              <li>
+                <a href="" class="nav__user-design-item-link">
+                  <i class="ti-back-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav__user-design-item-link">
+                  <i class="ti-back-left"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav__user-design-item-link">
+                  <i class="ti-pencil"></i> <span>Draw</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav__user-design-item-link">
+                  <i class="ti-eye"></i> <span>View</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav__user-design-item-link">
+                  <i class="ti-help"></i> <span>Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <div class="main__img-object">
+          <div class="ckeditor__input-app">
+            <div id="ckeditor__input">
+            </div>
+            <button id="submit">Send</button>
+          </div>
+          
+          <ul class="main__img-object-list">
+            <li>
+              <a href="" class="main__img-object-list-link">
+                <img
+                  src="./Img/front.png"
+                  alt=""
+                  class="
+                    main__img-object__img-link
+                    main__img-object__img-link-checked
+                  "
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" class="main__img-object-list-link">
+                <img
+                  src="./Img/back.png"
+                  alt=""
+                  class="main__img-object__img-link"
+                />
+              </a>
+            </li>
+           
+          </ul>
+          <div class="main__img-object-size">
+            <i class="ti-zoom-in icon__zoom-in"></i>
+            <div class="node__adjusted">
+              <div class="node__adjusted-item"></div>
+            </div>
+            <span></span>
+            <i class="ti-zoom-out icon__zoom-out"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main__editor">
+        <div class="main__editor-item">
+          <label for="tshirt-color"><span class="main__editor-span">Background </span></label>
+          <input type="color" id="tshirt-color" value="#FFFFFF"/>
+        </div>
+        <div class="main__editor-item">
+          <label for="tshirt-design"><span class="main__editor-span">Logo</span></label>
+          <select id="tshirt-design">
+            <option value="">Our designs</option>
+            <option value="./logo.png">Batman</option>
+            <option value="./Picture2.png">Nike</option>
+            <option value="./Picture1.png">Nike1</option>
+            <option value="./Img/VKU.png">VKU</option>
+          </select>
+        </div>
+        <div class="main__editor-item main__editor-item-add">
+          <div class="main__editor-item-add-text">
+            <i class="ti-text"></i>
+            <span>Add text</span>
+          </div>
+        </div>
+        <div class="main__editor-item main__editor-item-add upload__add">
+          <label for="tshirt-custompicture"><span class="main__editor-span">Upload File</span></label>
+          <input type="file" id="tshirt-custompicture"/>
+        </div>
+      </div>
+    </div>
+    <script src=".\fabric.js-4.5.0\fabric.js-4.5.0\dist\fabric.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="../CKEditor/ckeditor5-build-classic-27.1.0/ckeditor5-build-classic/ckeditor.js"></script>
+    <script>
+      let editor;
+     ClassicEditor
+    .create( document.querySelector( '#ckeditor__input' ) )
+    .then( newEditor => {
+        editor = newEditor;
+        console.log(editor.getData());
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
+    document.querySelector( '#submit' ).addEventListener( 'click', () => {
+    const editorData = editor.getData();
+    var textDesign = document.querySelector('.text-design');
+    textDesign.innerHTML = editorData;
+} );
+var addText = document.querySelector( '.main__editor-item-add-text');
+var mainEditor = document.querySelector( '.ckeditor__input-app');
+var countAddText = 0;
+addText.onclick = function(){
+  countAddText++;
+  if(countAddText%2!=0){
+    mainEditor.style.display ='flex';
+  }else{
+    mainEditor.style.display="none";
+  }
+}
+
+</script>
+  </body>
+</html>

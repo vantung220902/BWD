@@ -1,0 +1,330 @@
+.drawing-area {
+    position: absolute;
+    top: 60px;
+    left: 122px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+}
+
+.canvas-container {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    user-select: none;
+}
+
+#tshirt-div {
+    width: 452px;
+    height: 548px;
+    position: relative;
+    background-color: #fff;
+    margin-top: 66px;
+}
+
+#canvas {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    user-select: none;
+    cursor: default;
+}
+.user__desgin-object{
+    overflow: hidden;
+}
+.main__designer {
+    display: flex;
+    margin-top: 108px;
+}
+.nav__user-design {
+    position: absolute;
+    top: 2%;
+    max-width: 1000px;
+    display: flex;
+    right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav__user-design-item-link {
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    color: var(--white-color);
+    width: 100%;
+    height: 100%;
+}
+.nav__user-design-item-link i {
+    font-size: 30px;
+    line-height: 1.4;
+}
+.nav__user-design-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__user-design-item-link-cube {
+    background-color: var(--white-color);
+    border: 2px solid var(--boder-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+.nav__user-design-item-link-rectangle {
+    width: 48px;
+    background-color: var(--white-color);
+    height: 24px;
+    border: 1px solid var(--boder-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__user-design-item-link-rectangle img {
+    width: 16px;
+    height: 16px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+.main__editor {
+    width: 248px;
+    padding: 28px;
+    padding-top: 38px;
+    border-radius: 8px;
+    max-width: 248px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: 0 1px 5px 1px #dcdedf;
+    position: relative;
+    right:-58px;
+}
+#tshirt-backgroundpicture{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+#tshirt-design,
+#tshirt-color {
+    width: 100%;
+}
+.main__editor-item-add {
+    width: 100%;
+    border: 1px dotted #000;
+    border-radius: 4px;
+}
+.tshirt-div{
+    mix-blend-mode: hue;
+}
+.main__editor-item{
+    margin-bottom: 16px;
+    padding: 6px;
+    cursor: pointer;
+}
+.main__editor-item-add-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__editor-item-add-text i {
+    font-size: 60px;
+    color: #333;
+    font-weight: 900;
+}
+.nav__user-design-item-link-rectangle i {
+    font-size: 12px;
+    color: var(--black-color);
+}
+
+.main__img-object{
+    position: absolute;
+    right: 0;
+    left: 20%;
+    top: 10%;
+}
+.main__img-object__img-link{
+    width:120px;
+    height:120px;
+    margin-left: 68px;
+    margin-top: 28px;
+}
+.main__img-object-size{
+    position: absolute;
+    height: 160px;
+    width: 28px;
+    border-radius: 4px;
+    top: 50%;
+    left: 100%;
+    z-index: 19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--boder-color);
+    box-shadow: 0 1px 5px 1px #dcdedf;
+    overflow: hidden;
+}
+.main__img-object-size span{
+    width: 4px;
+    height: 110px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: block;
+}
+.main__img-object-size span::after{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 60%;
+    width: 100%;
+    background-color: var(--star-gold--color);
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.node__adjusted{
+    position: absolute;
+    background-color: var(--star-gold--color);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    top: 38%;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.node__adjusted i{
+    color: var(--white-color);
+}
+.main__img-object__img-link.main__img-object__img-link-checked{
+    border: none;
+    border: 1px solid #ffce3e;
+}
+.main__img-object__img-link{
+    border: 1px solid #dcdedf;
+}
+.main__img-object-list-link{
+    display: block;
+}
+.node__adjusted-item{
+    content: "";
+    position: absolute;
+    width:4px;
+    height:66px;
+    display:block;
+    background-color: #ffce3e;
+    top: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.main__editor-span{
+    color: #333;
+    font-size:18px;
+    font-family: "Oswald" ,sans-serif;
+    list-style: 20px;
+    margin-bottom: 12px;
+    display:block;
+    text-align: center;
+}
+.upload__add{
+    overflow-x: hidden;
+    padding: 12px;
+}
+text-design {
+    position: absolute;
+    top: 19%;
+    left: 44%;
+    display: block;
+    color: #333;
+    font-size: 28px;
+    font-family: "Oswald" ,sans-serif;
+}
+.text-design p{
+    color: #333;
+    font-size:28px;
+}
+.ckeditor__input-app{
+    position: absolute;
+    bottom:  100%;
+    display: none;
+    z-index: 19;
+    width: 100%;
+}
+#tshirt-canvas{
+    width:200px;
+    height:400px;
+
+}
+#submit{
+    width: 100px;
+    height: 85px;
+    background: #007bff;
+    border: 1px solid var(--boder-color);
+    border-radius: 2px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: #fff;
+}
+#submit:hover{
+    background: #ffce3e;
+    color: #007bff;
+}
+#submit span{
+
+    font-size: 1.2rem;
+
+}
+@media (max-width: 739px ){
+    .main__editor{
+        width: 42%;
+        padding: 8px;
+        max-width: none;   
+        right: -5px;
+        z-index: 10;
+    }
+    .main__img-object-size{
+        left:88%;
+    }
+    #tshirt-canvas{
+        width: 79% !important;
+        height: 120% !important;
+        left: -39% !important;
+    }
+    .main__img-object{
+        position: absolute;
+        right: 0;
+        left: 0%;
+        top: 10%;
+    }
+    .ckeditor__input-app{
+        overflow: scroll;
+    }
+}
+@media (min-width:740px) and (max-width:1023px){
+    .logo__fashion {
+        color: #000;
+    }
+    .main__img-object-size{
+        left: 90%;
+    }
+    .main__editor{
+        right: -8px;
+    }
+    #tshirt-div{
+        width: 100%;
+        height: 100%;
+    }
+    .main__img-object {
+        position: absolute;
+        right: 0;
+        left: 12%;
+        top: 4%;
+    }
+
+}

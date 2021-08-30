@@ -1,0 +1,24 @@
+@media (max-width:1023px){
+.container__filter{
+    position: relative;
+   display: none;
+    z-index: 10;
+    background: var(--white-color);
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+}
+@media (min-width:740px) and (max-width:1023px){
+}
+@media (max-width: 739px ){
+    .header__product-body-item{
+        flex-direction: column;
+    }
+    .header__product-body-heading{
+        margin: 0 16px 12px;
+    }
+}
